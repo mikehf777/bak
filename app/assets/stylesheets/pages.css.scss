@@ -1,18 +1,75 @@
-#content{
-	width: 940px;
-	margin: 100px auto 0px auto;
-	text-align: center;
-	font-family: Sans-Serif;
-	font-size: 26px;
+body{
+	margin: 0 auto;
+	min-width: 940px;
 	color: #7e1c29;
 }
-.mail{
+#content{
+	width: 940px;
+	margin: 0 auto;
+}
+.span3{
+	float: left;
+	width: 33.33%;
+	h1{
+		font-family: serif;
+		font-size: 20px;
+	}
+}
+.highlighted{
+	color: #f2bc5a;
+}
+
+footer{
+	background-color: #7d1d2a;
+	border-width: 13px;
+	border-style: solid none;
+	border-color: rgba(0, 0, 0, 0.15);
+	height: 212px;
+	width: 100%;
+	padding-top: 35px;
+	color: #eacfa0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+	ul{
+		margin-left: 0;
+		padding-left: 0; 
+		list-style-type: none;
+	}
 	a{
-		color: #7e3d46;
+		color: #eacfa0;
 		text-decoration: none;
 		&:hover{
-			color: #7e1c29;
-			text-decoration: underline;
+			color: white;
 		}
 	}
+}
+.menu-footer{
+	@extend .span3
+}
+.redes-sociales{
+	li {
+		margin-top: 27px;
+		a{
+			background-image:url('botones-redes.png');
+			background-repeat: no-repeat;
+			display: block;
+			height: 30px;
+			padding-left:40px;
+		}
+		a.fb{ background-position: 0px 0px }
+		a.tw{ background-position: 0px -30px }
+	}
+	@extend .span3
+}
+.testimonios{
+	.texto{
+		height: 100px;
+		overflow: hidden;
+	}
+	@extend .span3
+}
+.footer2{
+	background-color: #e8d1a4;
+	height: 53px;
 }
