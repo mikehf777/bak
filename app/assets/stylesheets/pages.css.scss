@@ -1,3 +1,14 @@
+@mixin linear-gradient{
+	background-image: linear-gradient(bottom, #570611 0%, #7d1d2a 58%);
+	background-image: -o-linear-gradient(bottom, #570611 0%, #7d1d2a 58%);
+	background-image: -moz-linear-gradient(bottom, #570611 0%, #7d1d2a 58%);
+	background-image: -webkit-linear-gradient(bottom, #570611 0%, #7d1d2a 58%);
+	background-image: -ms-linear-gradient(bottom, #570611 0%, #7d1d2a 58%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #570611,color-stop(0.58, #7d1d2a)));
+}
+
+
+
 body{
 	margin: 0 auto;
 	min-width: 940px;
@@ -18,12 +29,16 @@ body{
 .highlighted{
 	color: #f2bc5a;
 }
-
+header{
+	border-top: 15px solid #7d1d2a;
+	text-align: center;
+}
 footer{
 	background-color: #7d1d2a;
 	border-width: 13px;
 	border-style: solid none;
-	border-color: rgba(0, 0, 0, 0.15);
+	border-top-color: rgba(0, 0, 0, 0.15);
+	border-bottom-color: rgba(0, 0, 0, 0.55);
 	height: 212px;
 	width: 100%;
 	padding-top: 35px;
@@ -43,6 +58,7 @@ footer{
 			color: white;
 		}
 	}
+	@include linear-gradient;
 }
 .menu-footer{
 	@extend .span3
@@ -50,22 +66,24 @@ footer{
 .redes-sociales{
 	li {
 		margin-top: 27px;
-		a{
-			background-image:url('botones-redes.png');
-			background-repeat: no-repeat;
-			display: block;
-			height: 30px;
-			padding-left:40px;
-		}
-		a.fb{ background-position: 0px 0px }
-		a.tw{ background-position: 0px -30px }
+		background-image:url('botones-redes.png');
+		background-repeat: no-repeat;
+		display: block;
+		height: 30px;
+		padding-left:40px;
 	}
+	li.fb{ background-position: 0px 0px }
+	li.tw{ background-position: 0px -30px }
 	@extend .span3
 }
 .testimonios{
-	.texto{
+	ul{
 		height: 100px;
 		overflow: hidden;
+		span.quotation{
+			position: relative;
+			top: 6px;
+		}
 	}
 	@extend .span3
 }
