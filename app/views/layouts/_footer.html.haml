@@ -1,32 +1,23 @@
 %footer
-	#content
+	#wrapper
 		.menu-footer
 			%h1	Menú Navegación
 			%ul
-				%li
-					= link_to 'INICIO', root_path
-				%li
-					= link_to 'QUIÉNES SOMOS', somos_path
-				%li
-					= link_to 'PRODUCTOS', productos_path
-				%li
-					= link_to 'GALERÍA', galeria_path
-				%li
-					= link_to 'CONTACTO', contacto_path
+				= li_tag(link_to('INICIO', root_path))
+				= li_tag(link_to('QUIÉNES SOMOS', somos_path))
+				= li_tag(link_to('PRODUCTOS', productos_path))
+				= li_tag(link_to('RECETAS BAK', recetas_path))
+				= li_tag(link_to('CONTACTO', contacto_path))
 		.redes-sociales
 			%h1 Redes Sociales
 			%ul
-				%li.fb
-					= link_to 'Facebook', 'http://www.facebook.com', target: '_blank'
-				%li.tw
-					= link_to 'Twitter', 'http://www.twitter.com', target: '_blank'
+				= content_tag(:li, link_to('Facebook', 'http://www.facebook.com', target: '_blank'), :class => 'fb')
+				= content_tag(:li, link_to('Twitter', 'http://www.twitter.com', target: '_blank'), :class => 'tw')
 		.testimonios
 			%h1 Nuestros Testimonios
 			%ul
 				%li{ data: { autor: 'Miguel Montañez' }}
-					Buen servicio y trato con el cliente, mis pedidos llegaron
-					a tiempo y me dieron seguimiento.
+					Buen servicio y trato con el cliente, mis pedidos llegaron a tiempo y me dieron seguimiento.
 				%li{ data: { autor: 'Pablo May' }}
-					Ut vehicula, neque in lacinia posuere, neque urna blandit
-					lorem, at semper libero dolor nec nunc.
+					Ut vehicula, neque in lacinia posuere, neque urna blandit lorem, at semper libero dolor nec nunc.
 .footer2

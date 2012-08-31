@@ -1,16 +1,16 @@
 class PagesController < ApplicationController
-  def home
+  def inicio
   end
 
-  def about
+  def somos
   end
 
-  def products
+  def productos
   end
 
-  def gallery
+  def recetas
   end
 
-  def contact
+  def contacto
   end
 end
