@@ -3,7 +3,6 @@
 	%head
 		%title Bak
 		= stylesheet_link_tag 'application', :media => 'all'
-		= javascript_include_tag 'application'
 		= csrf_meta_tags
 	%body
 		= render 'layouts/header'
@@ -12,3 +11,4 @@
 				= render 'layouts/navigation'
 				= yield
 		= render 'layouts/footer'
+		= javascript_include_tag 'application'
