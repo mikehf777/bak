@@ -1,7 +1,7 @@
 %footer
 	#wrapper
 		.menu-footer
-			%h1	Menú Navegación
+			%h1	<span class='highlighted'>Menú</span>
 			%ul
 				= li_tag(link_to('INICIO', root_path))
 				= li_tag(link_to('QUIÉNES SOMOS', somos_path))
@@ -9,15 +9,20 @@
 				= li_tag(link_to('RECETAS BAK', recetas_path))
 				= li_tag(link_to('CONTACTO', contacto_path))
 		.redes-sociales
-			%h1 Redes Sociales
+			%h1 <span class='highlighted'>Síguenos</span> En:
 			%ul
 				= content_tag(:li, link_to('Facebook', 'http://www.facebook.com', target: '_blank'), :class => 'fb')
 				= content_tag(:li, link_to('Twitter', 'http://www.twitter.com', target: '_blank'), :class => 'tw')
 		.testimonios
-			%h1 Nuestros Testimonios
+			%h1 <span class='highlighted'>Nuestros</span> Testimonios
 			%ul
-				%li{ data: { autor: 'Miguel Montañez' }}
-					Buen servicio y trato con el cliente, mis pedidos llegaron a tiempo y me dieron seguimiento.
-				%li{ data: { autor: 'Pablo May' }}
-					Ut vehicula, neque in lacinia posuere, neque urna blandit lorem, at semper libero dolor nec nunc.
+				%li
+					<span class='quotation'><img src='/assets/comillas.png'/></span>
+					Buen servicio y trato con el cliente, mis pedidos llegaron a tiempo y me dieron seguimiento.<br/>
+					<span class='highlighted'>Miguel Montañez</span>
+				%li
+					<span class = 'quotation'><img src='/assets/comillas.png'/></span>
+					Ut vehicula, neque in lacinia posuere, neque urna blandit lorem, at semper libero dolor nec nunc.<br/>
+					<span class='highlighted'>Pablo May</span>
 .footer2
+	%p COPYRIGHT (C) <a href='' id='home'>BAK CARNES Y ALIMENTOS</a>
