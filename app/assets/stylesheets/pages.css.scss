@@ -42,17 +42,21 @@ body{
 	}
 	p{
 		text-align: justify;
-		font-family: Tahoma, Arial, Helvetica, sans-serif;
-		color: #333;
+		font-family: helvetica, tahoma, Arial, sans-serif;
+		color: #777;
 	}
 }
 #wrapper{
 	width: 960px;
 	margin: 0 auto;
 }
-.span3{
+.span1_3{
 	float: left;
 	width: 33.33%;
+}
+.span1_2{
+	float: left;
+	width: 50%;
 }
 .highlighted{
 	color: #f2bc5a;
@@ -138,7 +142,7 @@ footer{
 	background-color: #7d1d2a;
 	@include linear-gradient(#570611,#7d1d2a);
 	h1{
-		color: white;
+		color: #EACFA0;
 	}
 	ul{
 		margin-left: 0;
@@ -147,7 +151,7 @@ footer{
 	}
 }
 .menu-footer{
-	@extend .span3
+	@extend .span1_3
 }
 .redes-sociales{
 	li {
@@ -160,7 +164,7 @@ footer{
 	}
 	li.fb{ background-position: 0px 0px }
 	li.tw{ background-position: 0px -30px }
-	@extend .span3
+	@extend .span1_3
 }
 .testimonios{
 	ul{
@@ -171,7 +175,7 @@ footer{
 			top: 6px;
 		}
 	}
-	@extend .span3
+	@extend .span1_3
 }
 .footer2{
 	height: 53px;
@@ -186,6 +190,9 @@ footer{
 		&:hover{
 			color: #7d1d2a;
 		}
+	}
+	small{
+		float:right;
 	}
 }
 .bienvenida{
@@ -203,7 +210,6 @@ footer{
 	}
 }
 
-/* SECCIÓN SOMOS*/
 .encabezado{
 	width: 900px;
 	height: 70px;
@@ -224,6 +230,13 @@ footer{
 	width: 940px;
 	min-height: 120px;
 	margin: 50px auto 30px;
+	.accordionButton {
+		width: 940px;
+	}
+	.accordionContent{
+		width: 860px;
+		padding: 20px 40px;
+	}
 }
 .accordionButton {
 	float: left;
@@ -238,22 +251,19 @@ footer{
 	@include linear-gradient(#570611,#7d1d2a);
 	@include box-shadow((0px 2px 3px rgba(0,0,0,0.7)));
 	span{
-		display: block;
-		width: auto;
-		height: 38px;
-		padding-top: 12px;
+		display:block;
+		height: 34px;
+		padding-top: 16px;
 		padding-left: 20px;
-		background-image: url('down-arrow.png');
+		background: url('down-arrow.png');
 		background-repeat: no-repeat;
-		background-position: right center;
+		background-position: center right;
 	}
 }
  
 .accordionContent {	
 	float: left;
 	position:relative;
-	width: 860px;
-	padding: 20px 40px;
 	background-color: #fff0d1;
 	display: none;
 	@include box-shadow((0px 2px 3px rgba(0,0,0,0.7)));
@@ -264,6 +274,29 @@ footer{
 		text-shadow: 0px 1px 1px #fff, 1px 1px 1px rgba(0,0,0,0.2);
 	}
 }
+
+#productos{
+	.res{
+		text-align: left;
+		@extend .span1_2;
+	}
+	.cerdo{
+		margin-top: 34px;
+		@extend .span1_2;
+	}
+	.accordionButton {
+		width: 96%;
+	}
+	.accordionContent{
+		width: 79%;
+		padding: 20px 40px;
+	}
+	ul li{
+		font-family: helvetica, tahoma, Arial, sans-serif;
+		color: #555;
+	}
+}
+
 .clear{
 	height: 40px;
 	clear: both;
