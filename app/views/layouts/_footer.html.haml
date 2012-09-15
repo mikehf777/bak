@@ -1,7 +1,7 @@
 %footer
 	#wrapper
 		.menu-footer
-			%h1	<span class='highlighted'>Menú</span>
+			%h2	<span class='highlighted'>Menú</span>
 			%ul
 				= li_tag(link_to('INICIO', root_path))
 				= li_tag(link_to('QUIÉNES SOMOS', somos_path))
@@ -9,12 +9,12 @@
 				= li_tag(link_to('RECETAS BAK', recetas_path))
 				= li_tag(link_to('CONTACTO', contacto_path))
 		.redes-sociales
-			%h1 <span class='highlighted'>Síguenos</span> En:
+			%h2 <span class='highlighted'>Síguenos</span> En:
 			%ul
 				= content_tag(:li, link_to('Facebook', 'http://www.facebook.com', target: '_blank'), :class => 'fb')
 				= content_tag(:li, link_to('Twitter', 'http://www.twitter.com', target: '_blank'), :class => 'tw')
 		.testimonios
-			%h1 <span class='highlighted'>Nuestros</span> Testimonios
+			%h2 <span class='highlighted'>Nuestros</span> Testimonios
 			%ul
 				%li
 					<span class='quotation'><img src='/assets/comillas.png'/></span>
@@ -27,4 +27,4 @@
 .footer2
 	%p 
 		COPYRIGHT (C) <a href='' id='home'>BAK CARNES Y ALIMENTOS</a>
-		<small>Diseño y Desarrollo Web | <a href = 'http://www.zignacreativa.com'>Zigna Creativa</a></small>
+		<span style ='float:right'>Diseño y Desarrollo Web | <a href = 'http://www.zignacreativa.com'>Zigna Creativa</a></span>

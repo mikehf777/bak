@@ -1,15 +1,25 @@
-.slider-wrapper.theme-nivo { position: relative; }
+.slider-wrapper { 
+	position: relative;
+	.border{
+		position: absolute;
+		width: 69px;
+		height: 31px;
+		left: 435px;
+		top: 99.5%;
+		background:url(slideshow/slider-deco.png) no-repeat;
+	}
+}
 .nivoSlider {
-	position:relative;
-	width:auto;
-	height:352px;
-	background:#fff url(slideshow/loading.gif) no-repeat 50% 50%;
 	overflow: hidden;
+	position: relative;
+	width: auto;
+	height: 352px;
+	background:#fff url(slideshow/loading.gif) no-repeat 50% 50%;
 	img {
 		position:absolute;
+		max-width: none;
 		top:0px;
 		left:0px;
-		max-width: none;
 	}
 }
 /* The slices and boxes in the Slider */
@@ -35,7 +45,7 @@
 	background: white;
 	width:410px;
 	height:120px;
-	padding: 5px 20px;
+	padding: 30px 25px;
 	z-index:8;
 	opacity: 0.8;
 	overflow: hidden;
@@ -45,7 +55,6 @@
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 	p{
-		font-size: 20px;
 		color: #7d1d2a;
 	}
 	span {
@@ -80,17 +89,17 @@
 	}
 }
 /* Control nav styles (e.g. 1,2,3...) */
-.theme-nivo .nivo-controlNav {
-    width:80px;
-    height:13px;
+.nivo-controlNav {
+	width:80px;
+	height:13px;
 	position:absolute;
 	left:88%;
 	bottom:15px;
-    margin-left:-51px; /* Tweak this to center bullets */
-    z-index:210;
-    padding:15px 13px 15px 17px;
-    cursor:pointer;
-    a {
+	margin-left:-51px; /* Tweak this to center bullets */
+	z-index:210;
+	padding:15px 13px 15px 17px;
+	cursor:pointer;
+	a {
 		display:block;
 		width:17px;
 		height:17px;

@@ -1,0 +1,72 @@
+/* Variables, mixins, clases y fuentes */
+@mixin box-sizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin scale($size){
+	-webkit-transform:	scale($size);
+ 	-moz-transform: 	scale($size);
+	-ms-transform:		scale($size);
+	transform:			scale($size);
+}
+@mixin linear-gradient($inicio, $fin){
+	background-image: linear-gradient(bottom, $inicio 0%, $fin 58%);
+	background-image: -o-linear-gradient(bottom, $inicio 0%, $fin 58%);
+	background-image: -moz-linear-gradient(bottom, $inicio 0%, $fin 58%);
+	background-image: -webkit-linear-gradient(bottom, $inicio 0%, $fin 58%);
+	background-image: -ms-linear-gradient(bottom, $inicio 0%, $fin 58%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $inicio,color-stop(0.58, $fin)));
+}
+@mixin box-shadow($args) {
+	-moz-box-shadow:	$args;
+    -webkit-box-shadow: $args;
+    box-shadow:			$args;
+}
+@mixin transition($time){
+	-webkit-transition:	$time;
+	-moz-transition:	$time;
+	-o-transition:		$time;
+	-ms-transition:		$time;
+	-webkit-timing-function:linear;
+	-moz-timing-function:	linear;
+	-o-timing-function:		linear;
+	-ms-timing-function:	linear;
+}
+.span1_3{
+	float: left;
+	width: 33.33%;
+}
+.span1_2{
+	float: left;
+	width: 50%;
+}
+.highlighted{
+	color: #f2bc5a;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url('/fonts/myfont.woff') format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "delicious";
+  src: url(/fonts/delicious-roman-webfont.eot);
+  src: url(/fonts/delicious-roman-webfont.eot?#iefix) format("embedded-opentype"), 
+  	url(/fonts/delicious-roman-webfont.woff) format("woff"), 
+  	url(/fonts/delicious-roman-webfont.ttf) format("truetype"), 
+  	url(/fonts/delicious-roman-webfont.svg#delicious) format("svg");
+  font-style: normal;
+}
+@font-face {
+  font-family: "delicious";
+  src: url(/fonts/delicious-bold-webfont.eot);
+  src: url(/fonts/delicious-bold-webfont.eot?#iefix) format("embedded-opentype"), 
+  	url(/fonts/delicious-bold-webfont.woff) format("woff"), 
+  	url(/fonts/delicious-bold-webfont.ttf) format("truetype"), 
+  	url(/fonts/delicious-bold-webfont.svg#delicious) format("svg");
+  font-weight: bold;
+}
