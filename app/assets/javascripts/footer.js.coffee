@@ -4,4 +4,4 @@ $(document).ready ->
 	  size: "100"
 	  opacity: 0.06
 	  fallback: ""
-	  monochrome: false
+	  monochrome: true

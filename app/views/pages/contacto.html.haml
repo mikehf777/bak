@@ -1,2 +1,22 @@
-%h1 Pages#contact
-%p  Find me in app/views/pages/about.html.haml
+#contacto
+	.encabezado
+		%h1 <span class='highlighted'>Contacto</span>
+	%p 
+		<br/> No dude en contactarnos. Contamos con servicio para hoteles y restaurantes de Cancún, Riviera Maya y Cozumel.
+		<br/><b>¡PERMÍTANOS SERVIRLE COMO SE MERECE!</b>
+	.formulario
+		= render 'form'
+	.informacion
+		%ul
+			%li.tel
+				%b Teléfono/Fax
+				%p (01 998) 886 21 55
+			%li.email
+				%b Email
+				%p información@bakcarnes.com
+			%li.dir
+				%b Dirección
+				%p 
+					Carretera Cancún Aeropuerto, Km. 17.5, Bodega 101, Central de abastos, 
+					Alfredo V. Bonfil, Q. Roo, C.P. 77560
+	.clear

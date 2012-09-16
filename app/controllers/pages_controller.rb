@@ -12,5 +12,6 @@ class PagesController < ApplicationController
   end
 
   def contacto
+  	@message = Message.new
   end
 end

@@ -1,4 +1,9 @@
 /* Variables, mixins, clases y fuentes */
+@mixin border-radius($radio) {
+    -moz-border-radius: $radio;
+    -webkit-border-radius: $radio;
+    border-radius: $radio;
+}
 @mixin box-sizing{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

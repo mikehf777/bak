@@ -1,0 +1,8 @@
+= render 'shared/alerts'
+= simple_form_for @message do |f| 
+	= f.input :nombre
+	= f.input :email
+	= f.input :asunto
+	= f.input :mensaje, :as => :text, :input_html => { :cols => 50, :rows => 6 }
+	= f.full_error :email
+	= f.button :submit, :value => 'ENVIAR'

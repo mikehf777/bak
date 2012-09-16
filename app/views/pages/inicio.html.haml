@@ -1,11 +1,18 @@
-#slideshow
-	= render 'pages/slideshow'
-.shadow
-.bienvenida
-	%h1 <span class ='highlighted'>Bienvenido </span>a Bak
-%p
-	Somos una empresa que tiene como objetivo brindar el mejor servicio con abasto suficiente en productos seleccionados,
-	brindando calidad y confianza a nuestros clientes. <br/><br/>
-= link_to image_tag("contenido-productos.png",	class: 'secciones'), productos_path
-= link_to image_tag("contenido-recetas.png",	class: 'secciones'), recetas_path
-= link_to image_tag("contenido-pedidos.png",	class: 'secciones'), contacto_path
+#inicio
+	#slideshow
+		= render 'pages/slideshow'
+	.shadow
+	.bienvenida
+		%h2 <span class ='highlighted'>Bienvenido </span>a Bak
+	%p
+		Somos una empresa que tiene como objetivo brindar el mejor servicio con abasto suficiente en productos seleccionados,
+		brindando calidad y confianza a nuestros clientes. <br/><br/>
+	%a.secciones(href=productos_path)
+		= image_tag("contenido-productos.png")
+		%h2.productos <span class ='highlighted'>Productos</span>
+	%a.secciones(href=recetas_path)
+		= image_tag("contenido-recetas.png")
+	%a.secciones(href=productos_path)
+		= image_tag("contenido-pedidos.png")
+		%h2.pedidos <span class ='highlighted'>Pedidos</span>
+	.clear

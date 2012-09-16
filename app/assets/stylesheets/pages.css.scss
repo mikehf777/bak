@@ -5,7 +5,7 @@ body{
 	min-width: 985px;
 	margin: 0 auto;
 	font-family: delicious, Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 19px;
 	text-align: justify;
 }
 h1, h2, h3, h4, h5, h6{
@@ -26,35 +26,50 @@ a{
 }
 
 /* Sección Inicio */
-#slideshow{
-	width: 940px;
-	height: 352px;
-	margin: 0 auto;
-	border-bottom-style:solid;
-	border-bottom-width:13px;
-	border-bottom-color: #7E1C29;
-	background-image: url('slideshow/slider-deco.png');
-	background-position: 100px center;
-	background-repeat: no-repeat;
-}
-.shadow{
-	width: 958px;
-	height: 56px;
-	background-image: url('slideshow/shadow.png');
-	background-position: 0px -56px;
-}
-.bienvenida{
-	width: 470px;
-	margin: -40px auto 0;
-	text-align: center;
-	background-image: url(deco-title-left.png), url(deco-title-right.png);
-	background-position: left center, right center;
-	background-repeat: no-repeat;
-}
-.secciones{
-	@include transition(0.2s);
-	&:hover{
-		@include scale(0.99);
+#inicio{
+	#slideshow{
+		width: 940px;
+		height: 352px;
+		margin: 0 auto;
+		border-bottom-style:solid;
+		border-bottom-width:13px;
+		border-bottom-color: #7E1C29;
+		background-image: url('slideshow/slider-deco.png');
+		background-position: 100px center;
+		background-repeat: no-repeat;
+	}
+	.shadow{
+		width: 958px;
+		height: 56px;
+		background-image: url('slideshow/shadow.png');
+		background-position: 0px -56px;
+	}
+	.bienvenida{
+		width: 470px;
+		margin: -40px auto 0;
+		text-align: center;
+		background-image: url(deco-title-left.png), url(deco-title-right.png);
+		background-position: left center, right center;
+		background-repeat: no-repeat;
+	}
+	.secciones{
+		float:left;
+		width: 310px;
+		height: 198px;
+		h2.productos{
+			position: relative;
+			top: -87px;
+			left: 80px;
+		}
+		h2.pedidos{
+			position: relative;
+			top: -87px;
+			left: 100px;
+		}
+		@include transition(0.2s);
+		&:hover{
+			@include scale(0.99);
+		}
 	}
 }
 
@@ -151,6 +166,45 @@ a{
 		color: #555;
 	}
 }
+
+#recetas{
+	color: #777;
+	p{
+		padding-right: 47px;
+	}
+	p.titulo{
+		margin: 20px 0px;
+		font-weight: bold;
+	}
+	.salpicon{
+		@extend .span1_2;
+	}
+	.carne{
+		@extend .span1_2;
+	}
+}
+
+#contacto{
+	color: #777;
+	.formulario{
+		@extend .span1_2;
+	}
+	.informacion{
+		li {
+			display: block;
+			height: 59px;
+			margin-top: 27px;
+			padding-left:50px;
+			background-image:url('contacto/iconos.jpg');
+			background-repeat: no-repeat;
+		}
+		li.tel{ background-position: 0px -6px }
+		li.email{ background-position: 0px -65px }
+		li.dir{ background-position: 0px -131px }
+		@extend .span1_2;
+	}
+}
+
 
 .clear{
 	height: 40px;

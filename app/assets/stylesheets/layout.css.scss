@@ -46,6 +46,7 @@ header{
 			width: 189px;
 			height: 45px;
 			line-height:45px;
+			font-size: 18px;
 			font-weight: bold;
 			text-align: center;
 			background-image: url('boton-menu-enmedio.png');
@@ -69,6 +70,7 @@ footer{
 	border-style: solid none;
 	border-top-color: rgba(0, 0, 0, 0.15);
 	border-bottom-color: rgba(0, 0, 0, 0.55);
+	font-size: 15px;
 	color: #eacfa0;
 	line-height: 25px;
 	background-color: #7d1d2a;
@@ -121,6 +123,63 @@ footer{
 		color: #d1704d;
 		&:hover{
 			color: #7d1d2a;
+		}
+	}
+}
+
+label{
+	display:block;
+}
+.flash{
+	width: 270px;
+	height: 32px;
+	margin-top: 15px;
+	padding-top: 10px;
+	padding-left: 20px;
+	@include border-radius(20px);
+}
+.flash-success{
+	color: green;
+	background-color: #bce5bc;
+	@extend .flash
+}
+.flash-error{
+	color: #7d1d2a;
+	background-color: #c97480;
+	@extend .flash
+}
+
+.formulario{
+
+	label:after { content: ": " }
+	input.string{
+		width: 250px;
+		height: 30px;
+		border: solid 1px #ced1da;
+		font-family: delicious, Arial, Helvetica, sans-serif;
+		background-color: #fff7e4;
+	}
+	textarea.text{
+		width: 300px;
+		height: 100px;
+		border: solid 1px #ced1da;
+		font-family: delicious, Arial, Helvetica, sans-serif;
+		background-color: #fff7e4;
+	}
+	.input{
+		margin-top: 10px;
+	}
+	.btn{
+		width: 91px;
+		height: 31px;
+		margin-top: 10px;
+		margin-left: 215px;
+		color: #EACFA0;
+		font-family: delicious, Arial, Helvetica, sans-serif;
+		border: none;
+		background-color: #6b1925;
+		&:hover{
+			color: white;
 		}
 	}
 }
