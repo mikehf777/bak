@@ -1,7 +1,8 @@
 !!!
 %html
 	%head
-		%title Bak
+		= content_tag(:title, title(@title))
+		= favicon_link_tag 'favicon.ico'
 		= stylesheet_link_tag 'application', :media => 'all'
 		= csrf_meta_tags
 	%body
