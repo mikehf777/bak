@@ -19,6 +19,7 @@ favicon.ico: favicon-a5a613bf65ae8fc5fe558c57b25f60c5.ico
 logo-bak.png: logo-bak-2747e12a997b2f25fd96c6d5f974ed46.png
 menu-pleca.png: menu-pleca-61db2bbde193933d1ee819c552cf29cf.png
 rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
+<<<<<<< HEAD
 recetas/carne de cerdo en adobo.jpg: recetas/carne de cerdo en adobo-5296ad3e2a5077d8f855cf24b30a8b11.jpg
 recetas/salpicon de res.jpg: recetas/salpicon de res-01f07724aaeba04748fb5dbca1cf0e37.jpg
 res.png: res-84fa358cd5c6df473df6be4ee7eb6cf5.png
@@ -35,3 +36,7 @@ slideshow/shadow.png: slideshow/shadow-8704b587b76bccd0f2566e111c102c54.png
 slideshow/slider-deco.png: slideshow/slider-deco-3d9e1e55d02e4c84d29e505168df13ba.png
 application.js: application-65bd9e274a4c3972bfce3dfe75d87c08.js
 application.css: application-98ccdcc975295affa2836f0539aae83a.css
+=======
+application.js: application-d47f12ee8bceef5910c0e6d180ecf97c.js
+application.css: application-b05dabfd7cacc5be34cdab3e67be8ae9.css
+>>>>>>> 4916d20621ea6cf671710ca15a7af7a22f88ecd7

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "variables.css.scss";
 
 /* Estilos globales */
@@ -67,6 +68,20 @@ a{
 			left: 100px;
 		}
 		@include transition(0.2s);
+=======
+#content{
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Sans-Serif;
+	font-size: 26px;
+	color: #7e1c29;
+}
+.mail{
+	a{
+		color: #7e3d46;
+		text-decoration: none;
+>>>>>>> 4916d20621ea6cf671710ca15a7af7a22f88ecd7
 		&:hover{
 			@include scale(0.99);
 		}
