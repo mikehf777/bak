@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem "haml", "~> 3.1.7"
 gem 'simple_form'
+gem 'newrelic_rpm'
 
 # Gems used only for assets and not required
 # in production environments by default.
