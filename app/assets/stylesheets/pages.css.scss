@@ -17,6 +17,9 @@ p{
 	text-align: justify;
 	color: #777;
 }
+p#descripcion{
+	font-size: 22px;
+}
 a{
 	color: #eacfa0;
 	text-decoration: none;
@@ -79,7 +82,6 @@ a{
 				float: left;
 				width: 120px;
 				text-align: left;
-				margin-top: 30px;
 				margin-left: 150px;
 				font-size: 16px;
 			}
@@ -94,6 +96,9 @@ a{
 			&:hover{
 				background-position: 0px -116px;
 			}
+			p{
+				margin-top: 25px;
+			}
 			@extend .certificado;
 		}
 		#certificado-v{
@@ -105,6 +110,7 @@ a{
 				background-position: 0px -120px;
 			}
 			p{
+				margin-top: 30px;
 				margin-left: 210px;
 			}
 			@extend .certificado;
@@ -116,6 +122,9 @@ a{
 			background-repeat: no-repeat;
 			&:hover{
 				background-position: 0px -120px;
+			}
+			p{
+				margin-top: 18px;
 			}
 			@extend .certificado;
 		}

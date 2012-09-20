@@ -1,12 +1,12 @@
 @import "variables.css.scss";
 
 /* Resets */
-p{
+p {
 	margin: 0;
 	padding: 0;
 	font-size: 19px;
-	letter-spacing: -1px;
-	word-spacing: -1px;
+	letter-spacing: 0px;
+	word-spacing: 1px;
 }
 
 /* Estilos y clases del layout */
@@ -116,8 +116,9 @@ footer{
 	background-color: #e7d2a5;
 	p{
 		margin: 0;
-		padding: 20px;
+		padding-top: 20px;
 		font-size: 14px;
+		letter-spacing: -1px;
 	}
 	a{
 		color: #d1704d;
