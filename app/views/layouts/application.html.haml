@@ -3,6 +3,7 @@
 	%head
 		/[if lt IE 9]
 			%script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
+			%script(src='/assets/excanvas.compiled.js')
 		= content_tag(:title, title(@title))
 		= favicon_link_tag 'favicon.ico'
 		= stylesheet_link_tag 'application', :media => 'all'

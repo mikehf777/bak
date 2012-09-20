@@ -1,7 +1,7 @@
 .slider-wrapper
 	#slider.nivoSlider
-		= image_tag('slideshow/image-slider.png', title: "<p>Manejamos productos únicamente de la más alta calidad para cumplir con los estándares requeridos.</p>")
-		= image_tag('slideshow/image-slider2.png', title: "<p>Contamos con los cortes de carne mejor conocidos para que los disfrutes con tu familia.</p>")
-		= image_tag('slideshow/image-slider3.png', title: "<p>Te ofrecemos productos de la más alta calidad importados y nacionales.</p>")
-		= image_tag('slideshow/image-slider4.png', title: "<p>Contamos con servicio para hoteles y restaurantes de Cancún, Riviera Maya y Cozumel</p>")
+		= slide image: 'image-slider.png',  title: 'Manejamos productos únicamente de la más alta calidad para cumplir con los estándares requeridos.'
+		= slide image: 'image-slider2.png', title: 'Contamos con los cortes de carne mejor conocidos para que los disfrutes con tu familia.'
+		= slide image: 'image-slider3.png', title: 'Te ofrecemos productos de la más alta calidad importados y nacionales.', link: productos_path
+		= slide image: 'image-slider4.jpg', title: 'Contamos con servicio para hoteles y restaurantes de Cancún, Riviera Maya y Cozumel.', link: contacto_path
 	.border

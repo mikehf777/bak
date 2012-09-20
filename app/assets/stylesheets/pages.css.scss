@@ -58,17 +58,66 @@ a{
 		height: 198px;
 		h2.productos{
 			position: relative;
-			top: -87px;
+			top: -90px;
 			left: 80px;
 		}
 		h2.pedidos{
 			position: relative;
-			top: -87px;
+			top: -89px;
 			left: 100px;
 		}
 		@include transition(0.2s);
 		&:hover{
 			@include scale(0.99);
+		}
+	}
+	#certificados{
+		.certificado{
+			background-color: #eee;
+			height: 120px;
+			p{
+				float: left;
+				width: 120px;
+				text-align: left;
+				margin-top: 30px;
+				margin-left: 150px;
+				font-size: 16px;
+			}
+			@extend .span1_3;
+		}
+		#certificado-m{
+			float: left;
+			width: 32%;
+			background: url('certificado-m.jpg');
+			background-repeat: no-repeat;
+			background-position: 0px 2px;
+			&:hover{
+				background-position: 0px -116px;
+			}
+			@extend .certificado;
+		}
+		#certificado-v{
+			float: left;
+			width: 36%;
+			background: url('certificado-v.jpg');
+			background-repeat: no-repeat;
+			&:hover{
+				background-position: 0px -120px;
+			}
+			p{
+				margin-left: 210px;
+			}
+			@extend .certificado;
+		}
+		#certificado-us{
+			float: left;
+			width: 32%;
+			background: url('certificado-us.jpg');
+			background-repeat: no-repeat;
+			&:hover{
+				background-position: 0px -120px;
+			}
+			@extend .certificado;
 		}
 	}
 }
@@ -81,7 +130,6 @@ a{
 	padding-top: 40px;
 	padding-left: 40px;
 	@include linear-gradient(#fff0d1,#fff8e8);
-	@include box-shadow((0px 2px 3px rgba(0,0,0,0.7)));
 	h1{
 		margin: 0;
 	}
@@ -143,14 +191,162 @@ a{
 		padding: 10px;
 	}
 	.res{
-		text-align: left;
+		ul#partes-res{
+			position: relative;
+			width: 367px;
+			height: 259px;
+			margin: 0;
+			padding: 0;
+			background: url('productos/res.png');
+			li{
+				display: block; 
+				position: absolute;
+				margin: 0; 
+				padding: 0; 
+				list-style: none; 
+				a{ 
+					display: block;
+					&:hover{
+						background: url('productos/res.png');
+						background-repeat: no-repeat;
+					}
+				}
+			}
+			li#espaldilla{
+				width: 87px;
+				height: 50px;
+				top: 43px;
+				left: 83px;
+				a{ 
+					height: 50px;
+					&:hover{
+						background-position: -47px -258px;
+					}
+				}
+			}
+			li#costilla{
+				width: 63px;
+				height: 43px;
+				top: 50px;
+				left: 164px;
+				a{ 
+					height: 43px;
+					&:hover{
+						background-position: -136px -266px;
+					}
+				}
+			}
+			li#lomo{
+				width: 66px;
+				height: 44px;
+				top: 49px;
+				left: 218px;
+				a{ 
+					height: 44px;
+					&:hover{
+						background-position: -199px -264px;
+					}
+				}
+			}
+			li#falda{
+				width: 171px;
+				height: 66px;
+				top: 99px;
+				left: 107px;
+				a{ 
+					height: 66px;
+					&:hover{
+						background-position: -77px -314px;
+					}
+				}
+			}
+			li#pierna{
+				width: 60px;
+				height: 122px;
+				top: 43px;
+				left: 279px;
+				a{ 
+					height: 122px;
+					&:hover{
+						background-position: -265px -264px;
+					}
+				}
+			}
+		}
 		@extend .span1_2;
 	}
 	.cerdo{
-		margin-top: 34px;
-		img{
+		margin-top: 36px;
+		ul#partes-cerdo{
 			position: relative;
-			left: 77px;
+			width: 401px;
+			height: 223px;
+			margin: 0px 61px;
+			padding: 0;
+			background: url('productos/cerdo.png');
+			li{
+				display: block; 
+				position: absolute;
+				margin: 0; 
+				padding: 0; 
+				list-style: none; 
+				a{ 
+					display: block;
+					&:hover{
+						background: url('productos/cerdo.png');
+						background-repeat: no-repeat;
+					}
+				}
+			}
+			li#lomo{
+				width: 148px;
+				height: 50px;
+				top: 14px;
+				left: 161px;
+				a{ 
+					height: 50px;
+					&:hover{
+						background-position: -140px -232px;
+					}
+				}
+			}
+			li#panceta{
+				width: 130px;
+				height: 50px;
+				top: 66px;
+				left: 173px;
+				a{ 
+					height: 50px;
+					&:hover{
+						background-position: -151px -284px;
+					}
+				}
+			}
+			li#aguja{
+				width: 81px;
+				height: 115px;
+				top: 28px;
+				left: 87px;
+				a{ 
+					height: 115px;
+					&:hover{
+						background-position: -49px -240px;
+					}
+				}
+			}
+			li#pierna{
+				width: 64px;
+				height: 112px;
+				top: 18px;
+				left: 306px;
+				a{ 
+					height: 112px;
+					&:hover{
+						background-position: -298px -231px;
+					}
+				}
+
+			}
 		}
 		@extend .span1_2;
 	}
@@ -204,8 +400,10 @@ a{
 		li.dir{ background-position: 0px -131px }
 		@extend .span1_2;
 	}
+	#camioneta{
+		margin-left: 27px;
+	}
 }
-
 
 .clear{
 	height: 40px;
